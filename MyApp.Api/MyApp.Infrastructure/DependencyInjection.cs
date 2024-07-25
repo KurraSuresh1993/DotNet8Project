@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MyApp.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,7 @@ namespace MyApp.Infrastructure
     {
         public static IServiceCollection AddInfrastructureDI(this IServiceCollection services)
         {
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer("myconn"));
             return services;
         }
     }

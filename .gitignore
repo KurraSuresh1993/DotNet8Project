@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MyApp.Api/.vs/MyApp.Api
+/MyApp.Api/MyApp.Api/obj
+/MyApp.Api/MyApp.Application/obj
+/MyApp.Api/MyApp.Core/obj
+/MyApp.Api/MyApp.Infrastructure/obj
